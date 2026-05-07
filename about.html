@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beat Archive | About</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Beat Archive</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">☰</button>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="beats.html">Beats</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">About</p>
+      <h1>About the archive</h1>
+      <p>
+        I've been making beats for about 5 years now. Its what I love to do in my free time.
+		There's nothing else I'd rather do.
+      </p>
+    </section>
+
+    <section class="form-card">
+      <h2>Leave a note</h2>
+      <p>Whats your fav?</p>
+
+      <form id="note-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="favorite">Favorite beat on the site</label>
+        <input type="text" id="favorite" name="favorite" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="button" type="submit">Submit note</button>
+      </form>
+
+      <p id="form-message" class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Track 10.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
